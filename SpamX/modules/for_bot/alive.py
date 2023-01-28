@@ -47,7 +47,7 @@ async def SpamX_(SpamX: Client, message: Message):
     Mai = await SpamX.get_me()
     chat = message.chat
     info = await message.reply_text("processing......")
-    spamx_reply = "**__SpamX by RiZoeLX;__** \n\n"
+    spamx_reply = "**__SpamX by Sumit;__** \n\n"
     spamx_reply += "<=======================> \n"
 
     try:
@@ -89,25 +89,25 @@ async def SpamX_(SpamX: Client, message: Message):
     spamx_reply += f"**Battery:** {battery} \n\n"
     await info.edit_text("..!......")
 
-    spamx_reply += f"**SpamX Version:** `{__version__}` \n"
-    spamx_reply += f"**Python Version:** `{platform.python_version()}` \n"
-    spamx_reply += f"**pyRiZoeLX Version:** `{rizoelx_vr}` \n"
-    spamx_reply += f"**Pyrogram Version:** `{pyrogram_vr}` \n\n"
+    spamx_reply += f"** ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ ::** `{__version__}` \n"
+    spamx_reply += f"**ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ:** `{platform.python_version()}` \n"
+    spamx_reply += f"**ꜱᴜᴍɪᴛ x ꜱᴘᴀᴍ ᴠᴇʀsɪᴏɴ:** `{rizoelx_vr}` \n"
+    spamx_reply += f"**ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ:** `{pyrogram_vr}` \n\n"
     
-    spamx_reply += f"**Your Name:** {user.first_name} \n"
-    spamx_reply += f"**Your ID:** `{user.id}` \n"
+    spamx_reply += f"**ʏᴏᴜʀ ɴᴀᴍᴇ:** {user.first_name} \n"
+    spamx_reply += f"**ʏᴏᴜʀ ɪᴅ:** `{user.id}` \n"
     if user.id in Devs:
        spamx_reply += f"**Rank:** Dev of SpamX \n"
     elif user.id == Owner or user.id == Mai.id:
-       spamx_reply += f"**Rank:** Owner 🔱 \n"
+       spamx_reply += f"**Rank:** ᴏᴡɴᴇʀ 🔱 \n"
     else:
-       spamx_reply += f"**Rank** Sudo ⚜️\n\n"
+       spamx_reply += f"**Rank** ꜱᴜᴅᴏ ⚜️\n\n"
     if DATABASE_URL:
        spamx_reply += f"**Total Sudos:** `{users_db.sudo_count()}` \n"
        spamx_reply += f"**Total Gbanned users:** `{gban_db.gban_count()}` \n"
     spamx_reply += "<=======================> \n\n"
-    spamx_reply += "**Source Code:** [GitHub 🐈‍⬛](https://github.com/RiZoeLX/SpamX) \n\n"
-    spamx_reply += "**© @RiZoeLX** || Support: @DNHxHELL"
+    spamx_reply += "**Source Code:** [GitHub 🐈‍⬛](https://t.me/ab_sumit) \n\n"
+    spamx_reply += "**© @ab_sumit** || Support: @twinkel_starz"
     
     try:
        await info.edit_text(spamx_reply, disable_web_page_preview=True)
